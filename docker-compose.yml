@@ -1,12 +1,12 @@
 version: '3'
 services:
   nextjs-docker:
-    image: cracoidic/nextjs-docker-sample:0.1
+    image: cracoidic/nextjs-docker-sample:0.2
     container_name: nextjs_sample_development
     ports:
       - 30000:3000
     volumes:
-      - ../nextjs-docker-sample:/usr/src/app
+      - ./:/usr/src/app
       - /usr/src/app/node_modules
       - /usr/src/app/.next
     command: bash -c "npm install && npm run dev"
