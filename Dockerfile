@@ -1,4 +1,4 @@
-FROM node:18.12.0
+FROM node:20.10.0
 
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app

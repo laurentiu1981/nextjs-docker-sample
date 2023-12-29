@@ -1,7 +1,9 @@
 version: '3'
 services:
   nextjs-docker:
-    image: cracoidic/nextjs:0.1
+    image: cracoidic/nextjs:20.10.0-0.1
+    build:
+      context: ./
     container_name: nextjs_sample_development
     ports:
       - 30000:3000
